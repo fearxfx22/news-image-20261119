@@ -174,46 +174,54 @@ def write_png(path, width, height, rows):
         fh.write(chunk(b"IEND", b""))
 
 
+def _axis_weights(s0, s1, n):
+    """(index, weight) pairs covering source interval [s0, s1)."""
+    i0 = int(s0)
+    i1 = int(s1)
+    if i1 <= i0:
+        i1 = i0 + 1
+    out = []
+    for i in range(i0, i1 + 1):
+        lo = max(s0, float(i))
+        hi = min(s1, float(i + 1))
+        wgt = hi - lo
+        if wgt <= 0:
+            continue
+        out.append((min(max(i, 0), n - 1), wgt))
+    tot = sum(w for _, w in out)
+    return [(i, w / tot) for i, w in out]
+
+
 def scale_cover(pixels, sw, sh, dw, dh):
-    """Scale an RGBA image to cover dw x dh, centre-cropped, bilinear."""
+    """Scale an RGBA image to cover dw x dh, centre-cropped.
+
+    Each output pixel averages every source pixel its footprint covers
+    (area averaging), so a large downscale stays free of the aliasing
+    that point-sampled bilinear leaves in fine detail.
+    """
     scale = max(dw / sw, dh / sh)
     off_x = (sw * scale - dw) / 2.0
     off_y = (sh * scale - dh) / 2.0
+    xw = [_axis_weights((x + off_x) / scale, (x + 1 + off_x) / scale, sw)
+          for x in range(dw)]
+    yw = [_axis_weights((y + off_y) / scale, (y + 1 + off_y) / scale, sh)
+          for y in range(dh)]
     out = []
     for y in range(dh):
-        sy = (y + off_y) / scale
-        y0 = int(sy)
-        if y0 < 0:
-            y0 = 0
-        y1 = y0 + 1
-        if y1 > sh - 1:
-            y1 = sh - 1
-        fy = sy - y0
-        top = pixels[y0]
-        bot = pixels[y1]
+        wy = yw[y]
         row = []
         for x in range(dw):
-            sx = (x + off_x) / scale
-            x0 = int(sx)
-            if x0 < 0:
-                x0 = 0
-            x1 = x0 + 1
-            if x1 > sw - 1:
-                x1 = sw - 1
-            fx = sx - x0
-            w00 = (1 - fx) * (1 - fy)
-            w10 = fx * (1 - fy)
-            w01 = (1 - fx) * fy
-            w11 = fx * fy
-            t0 = top[x0]
-            t1 = top[x1]
-            b0 = bot[x0]
-            b1 = bot[x1]
-            row.append((
-                int(t0[0] * w00 + t1[0] * w10 + b0[0] * w01 + b1[0] * w11 + 0.5),
-                int(t0[1] * w00 + t1[1] * w10 + b0[1] * w01 + b1[1] * w11 + 0.5),
-                int(t0[2] * w00 + t1[2] * w10 + b0[2] * w01 + b1[2] * w11 + 0.5),
-            ))
+            wx = xw[x]
+            r = g = b = 0.0
+            for y0, wyy in wy:
+                prow = pixels[y0]
+                for x0, wxx in wx:
+                    wgt = wxx * wyy
+                    px = prow[x0]
+                    r += px[0] * wgt
+                    g += px[1] * wgt
+                    b += px[2] * wgt
+            row.append((int(r + 0.5), int(g + 0.5), int(b + 0.5)))
         out.append(row)
     return out
 
