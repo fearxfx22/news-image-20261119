@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- THE WORLD — Thursday, 19 November 2026. Typeset layer (transparent PNG).
+     The lead photo region (x24 y120 w576 h252) is left transparent; the
+     hero image shows through it. Every other tile is opaque paper, except
+     the stat tile, which is ink. Rendered at 1024x1024 via Chromium. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- masthead -->
+  <text x="24" y="78" font-family="Liberation Serif" font-weight="bold" font-size="60" fill="#141414">THE WORLD</text>
+  <text x="1000" y="62" text-anchor="end" font-family="Liberation Sans" font-weight="bold" font-size="16" fill="#141414">Thursday, 19 November 2026</text>
+  <text x="1000" y="86" text-anchor="end" font-family="Liberation Sans" font-weight="bold" font-size="12" letter-spacing="2" fill="#B3261E">ONE PAGE · SIX STORIES</text>
+  <rect x="24" y="104" width="976" height="3" fill="#141414"/>
+  <rect x="24" y="109" width="976" height="1" fill="#B3261E"/>
+
+  <!-- lead tile: photo on top (transparent here), text zone below -->
+  <rect x="24" y="372" width="576" height="168" fill="#F7F4ED"/>
+  <rect x="24" y="120" width="576" height="420" fill="none" stroke="#141414" stroke-width="1"/>
+  <rect x="48" y="398" width="10" height="10" fill="#B3261E"/>
+  <text x="66" y="408" font-family="Liberation Sans" font-weight="bold" font-size="13" letter-spacing="2" fill="#B3261E">SHENZHEN</text>
+  <text x="48" y="454" font-family="Liberation Serif" font-weight="bold" font-size="36" fill="#141414">Three leaders, one table</text>
+  <text x="48" y="486" font-family="Liberation Sans" font-size="14.5" fill="#141414">Trump, Xi and Putin hold the first three-way summit of the US, China</text>
+  <text x="48" y="506" font-family="Liberation Sans" font-size="14.5" fill="#141414">and Russia at APEC. Nuclear arms, Iran and trade are on the agenda.</text>
+
+  <!-- tile 2: ICJ -->
+  <rect x="612" y="120" width="388" height="204" fill="#F7F4ED" stroke="#141414" stroke-width="1"/>
+  <rect x="628" y="140" width="10" height="10" fill="#B3261E"/>
+  <text x="644" y="152" font-family="Liberation Sans" font-weight="bold" font-size="13" letter-spacing="2" fill="#B3261E">THE HAGUE</text>
+  <text x="628" y="186" font-family="Liberation Serif" font-weight="bold" font-size="25" fill="#141414">The world court</text>
+  <text x="628" y="214" font-family="Liberation Serif" font-weight="bold" font-size="25" fill="#141414">rules today</text>
+  <text x="628" y="244" font-family="Liberation Sans" font-size="13.5" fill="#141414">The ICJ delivers its judgment in Gambia's</text>
+  <text x="628" y="262" font-family="Liberation Sans" font-size="13.5" fill="#141414">genocide case against Myanmar. A guilty</text>
+  <text x="628" y="280" font-family="Liberation Sans" font-size="13.5" fill="#141414">finding would make Myanmar the first state</text>
+  <text x="628" y="298" font-family="Liberation Sans" font-size="13.5" fill="#141414">ever held liable under the 1948 Convention.</text>
+
+  <!-- tile 3: Hormuz -->
+  <rect x="612" y="336" width="388" height="204" fill="#F7F4ED" stroke="#141414" stroke-width="1"/>
+  <rect x="628" y="356" width="10" height="10" fill="#B3261E"/>
+  <text x="644" y="368" font-family="Liberation Sans" font-weight="bold" font-size="13" letter-spacing="2" fill="#B3261E">STRAIT OF HORMUZ</text>
+  <text x="628" y="402" font-family="Liberation Serif" font-weight="bold" font-size="25" fill="#141414">Tanker hit again</text>
+  <text x="628" y="430" font-family="Liberation Serif" font-weight="bold" font-size="25" fill="#141414">in the strait</text>
+  <text x="628" y="460" font-family="Liberation Sans" font-size="13.5" fill="#141414">The ADNOC-linked tanker Navig8 Messi was hit</text>
+  <text x="628" y="478" font-family="Liberation Sans" font-size="13.5" fill="#141414">by an unknown projectile off Oman; one crew</text>
+  <text x="628" y="496" font-family="Liberation Sans" font-size="13.5" fill="#141414">member is missing, 11 injured — the 18th</text>
+  <text x="628" y="514" font-family="Liberation Sans" font-size="13.5" fill="#141414">attack on shipping here this month.</text>
+
+  <!-- tile 4: Crimea -->
+  <rect x="24" y="552" width="235" height="404" fill="#F7F4ED" stroke="#141414" stroke-width="1"/>
+  <rect x="40" y="576" width="10" height="10" fill="#B3261E"/>
+  <text x="56" y="588" font-family="Liberation Sans" font-weight="bold" font-size="13" letter-spacing="2" fill="#B3261E">KERCH STRAIT</text>
+  <text x="40" y="622" font-family="Liberation Serif" font-weight="bold" font-size="24" fill="#141414">Bridge hit for</text>
+  <text x="40" y="650" font-family="Liberation Serif" font-weight="bold" font-size="24" fill="#141414">a third time</text>
+  <text x="40" y="682" font-family="Liberation Sans" font-size="13" fill="#141414">Ukraine struck the Crimean</text>
+  <text x="40" y="700" font-family="Liberation Sans" font-size="13" fill="#141414">Bridge for the third time in a</text>
+  <text x="40" y="718" font-family="Liberation Sans" font-size="13" fill="#141414">week, halting traffic hours</text>
+  <text x="40" y="736" font-family="Liberation Sans" font-size="13" fill="#141414">before Putin's meetings in</text>
+  <text x="40" y="754" font-family="Liberation Sans" font-size="13" fill="#141414">Shenzhen. A 227-metre road</text>
+  <text x="40" y="772" font-family="Liberation Sans" font-size="13" fill="#141414">section fell on Tuesday.</text>
+  <rect x="40" y="800" width="203" height="1" fill="#141414" opacity="0.25"/>
+  <text x="40" y="840" font-family="Liberation Serif" font-weight="bold" font-size="26" fill="#B3261E">227 m</text>
+  <text x="40" y="864" font-family="Liberation Sans" font-size="11.5" fill="#141414">of road deck destroyed</text>
+  <text x="40" y="880" font-family="Liberation Sans" font-size="11.5" fill="#141414">on Tuesday</text>
+
+  <!-- tile 5: Bangladesh -->
+  <rect x="271" y="552" width="235" height="404" fill="#F7F4ED" stroke="#141414" stroke-width="1"/>
+  <rect x="287" y="576" width="10" height="10" fill="#B3261E"/>
+  <text x="303" y="588" font-family="Liberation Sans" font-weight="bold" font-size="13" letter-spacing="2" fill="#B3261E">DHAKA</text>
+  <text x="287" y="622" font-family="Liberation Serif" font-weight="bold" font-size="24" fill="#141414">Bangladesh burns</text>
+  <text x="287" y="650" font-family="Liberation Serif" font-weight="bold" font-size="24" fill="#141414">in lockdown</text>
+  <text x="287" y="682" font-family="Liberation Sans" font-size="13" fill="#141414">Hasina's Awami League called a</text>
+  <text x="287" y="700" font-family="Liberation Sans" font-size="13" fill="#141414">nationwide lockdown; two</text>
+  <text x="287" y="718" font-family="Liberation Sans" font-size="13" fill="#141414">ruling-party members were</text>
+  <text x="287" y="736" font-family="Liberation Sans" font-size="13" fill="#141414">killed and Yunus's home was</text>
+  <text x="287" y="754" font-family="Liberation Sans" font-size="13" fill="#141414">torched. Bombs and arson hit</text>
+  <text x="287" y="772" font-family="Liberation Sans" font-size="13" fill="#141414">28 districts in ten days.</text>
+  <rect x="287" y="800" width="203" height="1" fill="#141414" opacity="0.25"/>
+  <text x="287" y="840" font-family="Liberation Serif" font-weight="bold" font-size="26" fill="#B3261E">97</text>
+  <text x="287" y="864" font-family="Liberation Sans" font-size="11.5" fill="#141414">Border Guard platoons</text>
+  <text x="287" y="880" font-family="Liberation Sans" font-size="11.5" fill="#141414">deployed in seven districts</text>
+
+  <!-- tile 6: Van Gogh -->
+  <rect x="518" y="552" width="235" height="404" fill="#F7F4ED" stroke="#141414" stroke-width="1"/>
+  <rect x="534" y="576" width="10" height="10" fill="#B3261E"/>
+  <text x="550" y="588" font-family="Liberation Sans" font-weight="bold" font-size="13" letter-spacing="2" fill="#B3261E">NEW YORK</text>
+  <text x="534" y="622" font-family="Liberation Serif" font-weight="bold" font-size="24" fill="#141414">A Van Gogh sells</text>
+  <text x="534" y="650" font-family="Liberation Serif" font-weight="bold" font-size="24" fill="#141414">for $190.4M</text>
+  <text x="534" y="682" font-family="Liberation Sans" font-size="13" fill="#141414">'Châtaigniers en fleurs'</text>
+  <text x="534" y="700" font-family="Liberation Sans" font-size="13" fill="#141414">(1890), unseen in public</text>
+  <text x="534" y="718" font-family="Liberation Sans" font-size="13" fill="#141414">for 50 years, set an artist</text>
+  <text x="534" y="736" font-family="Liberation Sans" font-size="13" fill="#141414">record at Sotheby's — the</text>
+  <text x="534" y="754" font-family="Liberation Sans" font-size="13" fill="#141414">second-highest price ever at</text>
+  <text x="534" y="772" font-family="Liberation Sans" font-size="13" fill="#141414">the house.</text>
+  <rect x="534" y="800" width="203" height="1" fill="#141414" opacity="0.25"/>
+  <text x="534" y="840" font-family="Liberation Serif" font-weight="bold" font-size="26" fill="#B3261E">$117.2M</text>
+  <text x="534" y="864" font-family="Liberation Sans" font-size="11.5" fill="#141414">the previous Van Gogh</text>
+  <text x="534" y="880" font-family="Liberation Sans" font-size="11.5" fill="#141414">record, set in 2022</text>
+
+  <!-- stat tile: ink -->
+  <rect x="765" y="552" width="235" height="404" fill="#141414"/>
+  <text x="781" y="588" font-family="Liberation Sans" font-weight="bold" font-size="13" letter-spacing="2" fill="#B3261E">BY THE NUMBERS</text>
+  <text x="781" y="646" font-family="Liberation Serif" font-weight="bold" font-size="30" fill="#F7F4ED">3</text>
+  <text x="781" y="670" font-family="Liberation Sans" font-size="12" fill="#F7F4ED" opacity="0.75">leaders at the Shenzhen table</text>
+  <rect x="781" y="690" width="203" height="1" fill="#F7F4ED" opacity="0.25"/>
+  <text x="781" y="726" font-family="Liberation Serif" font-weight="bold" font-size="30" fill="#F7F4ED">28</text>
+  <text x="781" y="750" font-family="Liberation Sans" font-size="12" fill="#F7F4ED" opacity="0.75">districts hit by bombs, arson</text>
+  <rect x="781" y="770" width="203" height="1" fill="#F7F4ED" opacity="0.25"/>
+  <text x="781" y="806" font-family="Liberation Serif" font-weight="bold" font-size="30" fill="#F7F4ED">18</text>
+  <text x="781" y="830" font-family="Liberation Sans" font-size="12" fill="#F7F4ED" opacity="0.75">attacks on Hormuz shipping</text>
+  <text x="781" y="846" font-family="Liberation Sans" font-size="12" fill="#F7F4ED" opacity="0.75">this month</text>
+  <text x="781" y="930" font-family="Liberation Sans" font-size="11" fill="#F7F4ED" opacity="0.6">Figures from today's front page</text>
+
+  <!-- footer -->
+  <text x="24" y="984" font-family="Liberation Sans" font-size="11.5" fill="#5A564E">Sources: Reuters · BBC · Le Monde · Al Jazeera · Sotheby's · UKMTO · The Art Newspaper</text>
+  <text x="1000" y="984" text-anchor="end" font-family="Liberation Sans" font-size="11.5" fill="#5A564E">Page 1</text>
+</svg>
