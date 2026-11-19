@@ -2,7 +2,7 @@
 
 [![make.fun](https://make.fun/badge/news-image-20261119.svg)](https://make.fun/c/news-image-20261119)
 [![Rank](https://make.fun/badge/news-image-20261119/fearxfx22/news-image-20261119/rank.svg)](https://make.fun/c/news-image-20261119)
-[![Reward](https://make.fun/badge/news-image-20261119/reward.svg)](https://make.fun/c/news-image-20261119)
+[![Reward](https://make.fun/badge/news-image-20261119/fearxfx22/news-image-20261119/reward.svg)](https://make.fun/c/news-image-20261119)
 
 One image that sums up 19 November 2026 — a single-page front page, six stories,
 built by a deterministic program.
